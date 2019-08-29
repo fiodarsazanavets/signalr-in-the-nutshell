@@ -1,0 +1,133 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<div class="row" style="padding-top: 50px;">
+    <div class="col-md-4">
+        <div class="control-group">
+            <div>
+                <label for="broadcast">Message</label>
+                <input type="text" id="broadcast" name="broadcast" />
+            </div>
+            <button id="btn-broadcast">Broadcast</button>
+        </div>
+        <div class="control-group">
+            <div>
+                <label for="broadcast-title">Title</label>
+                <input type="text" id="broadcast-title" name="broadcast-title" />
+            </div>
+            <div>
+                <label for="broadcast-message">Message</label>
+                <input type="text" id="broadcast-message" name="broadcast-message" />
+            </div>
+            <button id="btn-broadcast-object">Broadcast</button>
+        </div>
+        <div class="control-group">
+            <div>
+                <label for="self-message">Message</label>
+                <input type="text" id="self-message" name="self-message" />
+            </div>
+            <button id="btn-self-message">Send to Self</button>
+        </div>
+        <div class="control-group">
+            <div>
+                <label for="self-object-title">Title</label>
+                <input type="text" id="self-object-title" name="self-object-title" />
+            </div>
+            <div>
+                <label for="self-object-message">Message</label>
+                <input type="text" id="self-object-message" name="self-object-message" />
+            </div>
+            <button id="btn-self-object">Send To Self</button>
+        </div>
+        <div class="control-group">
+            <div>
+                <label for="others-message">Message</label>
+                <input type="text" id="others-message" name="others-message" />
+            </div>
+            <button id="btn-others-message">Send to Others</button>
+        </div>
+        <div class="control-group">
+            <div>
+                <label for="others-object-title">Title</label>
+                <input type="text" id="others-object-title" name="others-object-title" />
+            </div>
+            <div>
+                <label for="others-object-message">Message</label>
+                <input type="text" id="others-object-message" name="others-object-message" />
+            </div>
+            <button id="btn-others-object">Send To Others</button>
+        </div>
+        <div class="control-group">
+            <div>
+                <label for="user-message">Message</label>
+                <input type="text" id="user-message" name="user-message" />
+            </div>
+            <div>
+                <label for="user-for-message">User Name</label>
+                <input type="text" id="user-for-message" name="user-for-message" />
+            </div>
+            <button id="btn-user-message">Send to User</button>
+        </div>
+        <div class="control-group">
+            <div>
+                <label for="group-message">Message</label>
+                <input type="text" id="group-message" name="group-message" />
+            </div>
+            <div>
+                <label for="group-for-message">Group Name</label>
+                <input type="text" id="group-for-message" name="group-for-message" />
+            </div>
+            <button id="btn-group-message">Send to Group</button>
+        </div>
+        <div class="control-group">
+            <div>
+                <label for="group-object-title">Title</label>
+                <input type="text" id="group-object-title" name="group-object-title" />
+            </div>
+            <div>
+                <label for="group-object-message">Message</label>
+                <input type="text" id="group-object-message" name="group-object-message" />
+            </div>
+            <div>
+                <label for="group-for-object">Group Name</label>
+                <input type="text" id="group-for-object" name="group-for-object" />
+            </div>
+            <button id="btn-group-object">Send To Group</button>
+        </div>
+        <div class="control-group">
+            <div>
+                <label for="user-object-title">Title</label>
+                <input type="text" id="user-object-title" name="user-object-title" />
+            </div>
+            <div>
+                <label for="user-object-message">Message</label>
+                <input type="text" id="user-object-message" name="user-object-message" />
+            </div>
+            <div>
+                <label for="user-for-object">User Name</label>
+                <input type="text" id="user-for-object" name="user-for-object" />
+            </div>
+            <button id="btn-user-object">Send to User</button>
+        </div>
+        <div class="control-group">
+            <div>
+                <label for="group-to-add">Group Name</label>
+                <input type="text" id="group-to-add" name="group-to-add" />
+            </div>
+            <button id="btn-group-add">Add User to Group</button>
+        </div>
+        <div class="control-group">
+            <div>
+                <label for="group-to-remove">Group Name</label>
+                <input type="text" id="group-to-remove" name="group-to-remove" />
+            </div>
+            <button id="btn-group-remove">Remove User from Group</button>
+        </div>
+    </div>
+    <div class="col-md-7">
+        <p>SignalR Messages:</p>
+        <pre id="signalr-message-panel"></pre>
+    </div>
+</div>
